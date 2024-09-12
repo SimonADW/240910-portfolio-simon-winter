@@ -1,0 +1,19 @@
+/* Color Variables */
+:root {
+	--primary-color: black;
+	--secondary-color: white;
+
+	--border-large-color: #4F02F6;
+	--border-small-color: #D5691A;
+	--button-gradient-color: linear-gradient(90deg, #D08936, #B14848);
+	
+}
+
+/* Spacing Variables */
+:root {
+	--spacing-xs: 0.25rem;
+	--spacing-sm: 0.5rem;
+	--spacing-md: 1rem;
+	--spacing-lg: 1.5rem;
+	--spacing-xl: 2rem;
+}

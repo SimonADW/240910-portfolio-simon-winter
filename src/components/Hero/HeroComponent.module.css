@@ -1,5 +1,5 @@
 .hero {
-	height: 80vh;
+	height: 80dvh;
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
@@ -44,7 +44,7 @@
 	border-color: #d3853d;
 	top: 0;
 	right: -15%;
-	background-image: url("../../assets/profile-cartoon.jpeg");
+	background-image: url("../../assets/images/profile-cartoon.jpeg");
 	background-size: cover;
 }
 

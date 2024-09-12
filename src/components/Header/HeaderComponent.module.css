@@ -4,15 +4,5 @@
 
 .header {	
 	padding: 1rem;
-	text-align: end;
-	
 }
 
-.nav {	
-	font-size: 1.4rem;
-	display: none;  /* Hidden temporarily */
-	flex-direction: column;	
-	justify-content: center;
-	align-items: center;
-	gap: 3rem;
-}
