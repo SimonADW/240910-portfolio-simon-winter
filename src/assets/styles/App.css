@@ -1,9 +1,7 @@
 
 
-/* -------- RESET ABOVE HERE --------- */
-
 :root {
-  font-family: inter, sans-serif;
+  font-family: inter, sans-serif;  
 }
 
 body {
@@ -11,3 +9,17 @@ body {
   color: white;
 }
 
+#root {
+  padding: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  #root {
+    max-width: 1150px;
+    margin: 0 auto;
+  }  
+}

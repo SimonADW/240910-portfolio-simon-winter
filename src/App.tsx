@@ -4,6 +4,7 @@ import './assets/styles/variables.css'
 import './assets/styles/App.css'
 import HeaderComponent from './components/Header/HeaderComponent'
 import HeroComponent from './components/Hero/HeroComponent'
+import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 
 function App() {  
 
@@ -11,6 +12,7 @@ function App() {
     <>
       <HeaderComponent />
       <HeroComponent />
+      <ProjectsSection />
     </>
   )
 }
