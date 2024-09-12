@@ -7,22 +7,10 @@ type navBarProps = {
 };
 
 const NavComponent = ({isSmallDevice, isMenuOpen}: navBarProps) => {
-	const [isMounted, setIsMounted] = useState(false);
-
-	useEffect(() => {
-	  const timer = setTimeout(() => {	
-		setIsMounted(true);
-	  }, 50);
-	
-	  return () => {
-		clearTimeout(timer);
-	  }
-	}, []);
-	
 	
 	return (
 		<>			
-		<nav className={`${style.nav} ${isSmallDevice ? style.navMenuLayout : style.navBarLayout} ${isMounted && style.open}`}>
+		<nav className={`${style.nav} ${isSmallDevice ? style.navMenuLayout : style.navBarLayout} ${isMenuOpen && style.open}`}>
 				<a href="#">_Projects</a>
 				<a href="#">_Technologies_</a>
 				<a href="#">Experience_</a>
