@@ -1,15 +1,14 @@
-import React from "react";
 import style from "./HeroComponent.module.css";
 
 const HeroComponent = () => {
 	return (
 		<div className={style.hero}>
-			<div className={`${style.circleBig} ${style.circle}`}>
+			<div className={`${style.circleMain} ${style.circle}`}>
 				<div className={style.nameTitleContainer}>
 					<div className={style.name}>Simon_Winter</div>
 					<div className={style.title}>Frontend_Developer</div>
 				</div>
-				<div className={`${style.circleSmall} ${style.circle}`}></div>
+				<div className={`${style.circleSecondary} ${style.circle}`}></div>
 			</div>
 			<div className={style.socialLinks}>
 				<a href="https://github.com/SimonADW" target="_blank">

@@ -1,4 +1,3 @@
-import React from "react";
 import { projectsList } from "../../assets/data/projectsList";
 import ProjectComponent from "../Project/ProjectComponent";
 import style from "./ProjectsSection.module.css";
@@ -16,7 +15,7 @@ export type ProjectType = {
 
 const ProjectsSection = () => {
 	return (
-		<section className={style.projectsSection}>
+		<section id='projects' className={style.projectsSection}>
 			<h2>Projects</h2>
 			{projectsList.map((project: ProjectType, index: number) => {
 				return <ProjectComponent key={index} project={project} />;

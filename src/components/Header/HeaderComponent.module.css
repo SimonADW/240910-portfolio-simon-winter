@@ -3,6 +3,6 @@
 }
 
 .header {	
-	padding: 1rem;
+	padding: var(--spacing-md) 0;
 }
 

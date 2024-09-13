@@ -4,7 +4,7 @@ export const projectsList = [
 		title: 'Product-list with cart',
 		technologies: 'React, TypeScript',
 		image: './src/assets/images/page-shots/dessertStore.png',
-		gitUrl: 'https://github.comhttps://github.com/SimonADW/240807-challenge-react-ts-dessert-store',
+		gitUrl: 'https://github.com/SimonADW/240807-challenge-react-ts-dessert-store',
 		liveUrl: 'https://dessert-store.netlify.app/',
 	},	
 	{

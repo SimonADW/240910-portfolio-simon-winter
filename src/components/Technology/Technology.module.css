@@ -1,0 +1,14 @@
+.technologies__techItem {
+	
+}
+
+.technologies__techItem__textcontainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.technologies__techItem__levelBar {
+	height: 0.5rem;
+	border-radius: 0.25rem;
+	background: var(--button-gradient-color);
+}
