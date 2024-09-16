@@ -6,6 +6,8 @@ import HeaderComponent from './components/Header/HeaderComponent'
 import HeroComponent from './components/Hero/HeroComponent'
 import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 import TechnologiesSection from './components/TechnologiesSection/TechnologiesSection'
+import FooterComponent from './components/Footer/FooterComponen'
+import ContactComponent from './components/Contact/ContactComponent'
 
 function App() {  
 
@@ -16,7 +18,9 @@ function App() {
       <HeroComponent />
       <ProjectsSection />
       <TechnologiesSection />
+      <ContactComponent />
       </main>
+      <FooterComponent />
     </>
   )
 }

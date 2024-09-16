@@ -1,0 +1,6 @@
+.footer {
+	height: var(--spacing-xl);
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}	

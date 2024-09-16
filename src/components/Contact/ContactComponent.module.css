@@ -1,0 +1,54 @@
+.contactSection {
+	height: clamp(10rem, 60vw, 1145px);
+	max-height: 690px;
+	position: relative;
+	font-weight: 300;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.contactSection h2 {	
+	margin-bottom: var(--spacing-sm);
+}	
+
+.contactSection a {
+	display: flex;
+	gap: var(--spacing-sm);
+	margin-bottom: var(--spacing-sm);
+}
+
+.contactSection svg {
+	fill: white;
+	width: 1.3rem;
+	height: 1.3rem;
+}
+
+.contactSection path {
+	stroke: white;
+}
+
+/* ----- Circle ------- */
+
+.circle {
+	height: auto;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+	border: 2px solid;
+	width: clamp(300px, 80%, 1000px);
+	border-color: #4f02f6;
+	box-shadow: 0 0 15px 3px #4f02f6;
+	
+	position: absolute;
+	/* top: -10%; */
+	left: 50%;
+	transform: translate(-50%);
+
+	display: flex;	
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
