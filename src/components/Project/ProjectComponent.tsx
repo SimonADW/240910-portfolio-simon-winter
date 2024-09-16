@@ -2,16 +2,19 @@ import style from './ProjectComponent.module.css'
 import type { ProjectType } from '../ProjectsSection/ProjectsSection'
 
 type ProjectComponentType = {
-	project: ProjectType;
+	project: ProjectType,
+	index: number,
+	images: string[]
+
 }
 
-const ProjectComponent = ({ project }: ProjectComponentType) => {
+const ProjectComponent = ({ project, index, images }: ProjectComponentType) => {
   return (
 	<div className={style.projectContainer}>
 		<div className={style.project__imageContent}>
 			<button>
 				<a href={project.liveUrl} target='_blank' title='Link to live view of project'>
-					<img src={project.image} alt={project.title} />
+					<img src={images[index]} alt={project.title} />
 				</a>
 			</button>
 		</div>
