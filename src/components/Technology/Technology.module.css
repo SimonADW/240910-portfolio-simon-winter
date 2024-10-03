@@ -6,9 +6,29 @@
 	display: flex;
 	justify-content: space-between;
 }
-
+.technologies__techItem__textcontainer h3,
+.technologies__techItem__textcontainer p {
+	transition: color 0.3s ease-out;
+}
+	
 .technologies__techItem__levelBar {
+	position: relative;
+	left: 0;
 	height: 0.5rem;
 	border-radius: 0.25rem;
 	background: var(--button-gradient-color);
+	transform-origin: left;
+	transition: transform 0.3s ease-out;
+}
+
+.technologies__techItem:hover .technologies__techItem__levelBar {
+	transform: scaleX(1.02);	
+}
+
+.technologies__techItem:hover .technologies__techItem__textcontainer h3 {
+	color: #D08936; /* Gradient color */
+} 
+
+.technologies__techItem:hover .technologies__techItem__textcontainer p {
+	color: var(--border-small-color);
 }

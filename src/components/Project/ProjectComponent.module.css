@@ -11,13 +11,19 @@
 	border: 2px solid var(--border-small-color);
 	border-radius: 0.75rem;
 	font-weight: 300;
+
+	/* Start hidden and fade + slide in */
+	opacity: 0; 
+	transform: translateY(20px); 
+  	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
+
 
 .projectContainer h3 {
 	font-size: 1.3rem;
 	font-weight: 300;
 } 
-
 
 .project__textContent {
 	width: 100%;
@@ -28,19 +34,30 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	gap: 0.5rem;
+
+	opacity: 0;	
+	transition: opacity 0.8s ease-out;
+	transition-delay: 400ms;
 }
 
 .project__textContent button {
 	padding: 0.5rem 1.5rem;
 	color: var(--primary-color);
-	/* border: 2px solid var(--border-large-color); */
 	border-radius: 0.25rem;
 	background: var(--button-gradient-color);
-
 }
 
 .project__imageContent {
 	flex: 1;
+	opacity: 0;
+	transform: translateY(10px); 
+	transition: transform 0.8s ease-out opacity 0.8s ease-out;
+	transition-delay: 300ms;
+}
+
+.fadeIn {
+	opacity: 1; 
+	transform: translateY(0); /* Move to the original position */
 }
 
 .project__imageContent img {		

@@ -38,7 +38,7 @@
 	top: 0;
 	left: 50%;
 	transform: translate(-50%);	
-	animation: circleFlash 4s 1s backwards;
+	animation: circleFlash 3s 1s backwards;
 }
 
 .circleSecondary {
@@ -61,7 +61,7 @@
 		border-color: #d3853d;
 		box-shadow: 0 0 15px 3px #d3853d;
 	}
-	50% {
+	35% {
 		border-color: #ffffff;
 		box-shadow: 0 0 15px 3px #ffffff;
 	}

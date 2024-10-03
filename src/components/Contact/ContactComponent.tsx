@@ -1,8 +1,12 @@
+import { InView } from 'react-intersection-observer'
 import style from './ContactComponent.module.css'
 
 const ContactComponent = () => {
   return (
-	<section id='contact' className={style.contactSection} >
+	<InView threshold={0.2} triggerOnce={true}>
+		{({inView, ref}) =>
+		
+	<section id='contact' ref={ref} className={inView ? `${style.contactSection} ${style.fadeIn}`: style.contactSection } >
 		<div className={style.circle}>
 			<h2>Contact</h2>
 			<a href="tel: +4790979439">
@@ -19,6 +23,8 @@ const ContactComponent = () => {
 			</a>
 		</div>
 	</section>
+	}
+	</InView>
   )
 }
 

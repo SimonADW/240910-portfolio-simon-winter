@@ -20,7 +20,8 @@ export type ProjectType = {
 
 //  TODO: Write jsdoc for all components
 
-const ProjectsSection = () => {
+const ProjectsSection = () => {	
+
 	// Array of project images - in corresponding order to projectsList
 	const images = [dessertStore, mortgageCalc, starWars]
 
