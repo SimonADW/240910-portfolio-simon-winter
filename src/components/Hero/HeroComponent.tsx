@@ -1,14 +1,39 @@
+import { useEffect, useState } from "react";
 import style from "./HeroComponent.module.css";
 
 const HeroComponent = () => {
+	const [scrollY, setScrollY] = useState(0);
+
+	const handleScroll = () => {		
+		setScrollY(window.scrollY);
+	};
+
+	useEffect(() => {		
+		// handleScroll();
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
+	// CALC TRANSLATION BASE ON SCOLLY
+	const translateY = Math.min(scrollY * 0.3, 200); // Max translateY 100px
+
 	return (
 		<div className={style.hero}>
 			<div className={`${style.circleMain} ${style.circle}`}>
-				<div className={style.nameTitleContainer}>
+				<div
+					className={style.nameTitleContainer}
+					style={{ transform: `translateY(-${translateY}px)`}}
+				>
 					<div className={style.name}>Simon_Winter</div>
 					<div className={style.title}>Frontend_Developer</div>
 				</div>
-				<div className={`${style.circleSecondary} ${style.circle}`}></div>
+				<div
+					className={`${style.circleSecondary} ${style.circle}`}
+					style={{ transform: `translateY(-${translateY}px)  translateX(-${translateY}px)` }}
+				></div>
 			</div>
 			<div className={style.socialLinks}>
 				<a href="https://github.com/SimonADW" target="_blank">
@@ -26,10 +51,13 @@ const HeroComponent = () => {
 								d="M11.1396 0.00012207C5.075 0.00012207 0.172363 5.27095 0.172363 11.7917C0.172363 17.0041 3.31365 21.4162 7.67144 22.9778C8.21628 23.0952 8.41585 22.7241 8.41585 22.4119C8.41585 22.1386 8.39789 21.2016 8.39789 20.2253C5.34708 20.9282 4.71177 18.8196 4.71177 18.8196C4.22149 17.453 3.49504 17.1018 3.49504 17.1018C2.49651 16.3795 3.56777 16.3795 3.56777 16.3795C4.6754 16.4576 5.25661 17.5898 5.25661 17.5898C6.23696 19.3858 7.81669 18.8783 8.45222 18.5659C8.54291 17.8045 8.83363 17.2774 9.1423 16.9847C6.70906 16.7113 4.14898 15.6962 4.14898 11.1669C4.14898 9.87838 4.58449 8.82421 5.27457 8.00436C5.16569 7.71159 4.78428 6.50098 5.38367 4.88067C5.38367 4.88067 6.30969 4.56826 8.39767 6.09105C9.29161 5.83294 10.2135 5.70163 11.1396 5.70053C12.0656 5.70053 13.0096 5.83733 13.8813 6.09105C15.9695 4.56826 16.8955 4.88067 16.8955 4.88067C17.4949 6.50098 17.1133 7.71159 17.0044 8.00436C17.7126 8.82421 18.1302 9.87838 18.1302 11.1669C18.1302 15.6962 15.5701 16.6917 13.1187 16.9847C13.5183 17.3555 13.8631 18.0582 13.8631 19.1711C13.8631 20.7523 13.8451 22.0214 13.8451 22.4117C13.8451 22.7241 14.0449 23.0952 14.5895 22.9781C18.9473 21.416 22.0886 17.0041 22.0886 11.7917C22.1066 5.27095 17.186 0.00012207 11.1396 0.00012207Z"
 								fill="white"
 							/>
-						</g>		
+						</g>
 					</svg>
 				</a>
-				<a href="https://www.linkedin.com/in/simon-a-d-winter/" target="_blank">
+				<a
+					href="https://www.linkedin.com/in/simon-a-d-winter/"
+					target="_blank"
+				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="28"
@@ -50,7 +78,7 @@ const HeroComponent = () => {
 								d="M25.6014 19.8615C25.1898 19.8654 24.7965 20.032 24.5076 20.3249C24.2187 20.6178 24.0576 21.0131 24.0596 21.4244C24.0616 21.8356 24.2265 22.2293 24.5182 22.5194C24.8099 22.8095 25.2048 22.9724 25.6163 22.9724C26.0279 22.9724 26.4228 22.8095 26.7145 22.5194C27.0062 22.2293 27.1711 21.8356 27.1731 21.4244C27.1751 21.0131 27.014 20.6178 26.7251 20.3249C26.4361 20.032 26.0429 19.8654 25.6313 19.8615H25.6014ZM25.6014 22.7943C25.3314 22.7988 25.0662 22.7232 24.8393 22.5771C24.6123 22.4309 24.4338 22.2209 24.3264 21.9734C24.2189 21.7259 24.1873 21.4521 24.2356 21.1867C24.2838 20.9213 24.4098 20.6761 24.5975 20.4822C24.7852 20.2883 25.0262 20.1544 25.2901 20.0974C25.554 20.0403 25.8289 20.0628 26.08 20.1619C26.3311 20.2609 26.5472 20.4322 26.7009 20.654C26.8546 20.8757 26.939 21.1381 26.9435 21.4078C26.9435 21.4155 26.9435 21.4229 26.9435 21.4307C26.9511 21.7845 26.8177 22.1269 26.5727 22.3824C26.3277 22.638 25.9911 22.7859 25.637 22.7936H25.6017"
 								fill="white"
 							/>
-						</g>						
+						</g>
 					</svg>
 				</a>
 			</div>

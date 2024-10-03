@@ -11,8 +11,8 @@ const NavComponent = ({isSmallDevice, isMenuOpen}: navBarProps) => {
 		<>			
 		<nav className={`${style.nav} ${isSmallDevice ? style.navMenuLayout : style.navBarLayout} ${isMenuOpen && style.open}`}>
 				<a href="#projects">_Projects</a>
-				<a href="#">_Technologies_</a>
-				<a href="#">Experience_</a>
+				<a href="#technologies">_Technologies_</a>
+				<a href="#contact">Contact_</a>
 		</nav>
 		</>
 	);

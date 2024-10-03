@@ -1,5 +1,5 @@
 .hero {
-	height: calc(80dvh + var(--spacing-lg));
+	height: clamp(500px, calc(80dvh + var(--spacing-lg)), 900px);
 
 	display: flex;
 	align-items: flex-end;
@@ -13,7 +13,6 @@
 	position: absolute;
 	left: -10%;
 	top: 50%;
-	transform: translateY(-50%);
 }
 
 .name {
@@ -38,7 +37,8 @@
 	box-shadow: 0 0 15px 3px #4f02f6;
 	top: 0;
 	left: 50%;
-	transform: translate(-50%);
+	transform: translate(-50%);	
+	animation: circleFlash 4s 1s backwards;
 }
 
 .circleSecondary {
@@ -53,4 +53,20 @@
 .socialLinks {
 	display: flex;
 	gap: var(--spacing-sm);
+}
+
+@keyframes circleFlash {
+
+	0% {
+		border-color: #d3853d;
+		box-shadow: 0 0 15px 3px #d3853d;
+	}
+	50% {
+		border-color: #ffffff;
+		box-shadow: 0 0 15px 3px #ffffff;
+	}
+	100% {
+		border-color: #4f02f6;
+		box-shadow: 0 0 15px 3px #4f02f6;		
+	}	
 }

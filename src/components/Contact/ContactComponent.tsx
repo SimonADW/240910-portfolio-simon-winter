@@ -2,7 +2,7 @@ import style from './ContactComponent.module.css'
 
 const ContactComponent = () => {
   return (
-	<section className={style.contactSection} >
+	<section id='contact' className={style.contactSection} >
 		<div className={style.circle}>
 			<h2>Contact</h2>
 			<a href="tel: +4790979439">
