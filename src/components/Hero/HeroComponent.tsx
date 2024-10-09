@@ -18,7 +18,7 @@ const HeroComponent = () => {
 	}, []);
 
 	// CALC TRANSLATION BASE ON SCOLLY
-	const translateY = Math.min(scrollY * 0.3, 200); // Max translateY 100px
+	const translateY = Math.min(scrollY * 0.3, 200); // Max translateY 200px
 
 	return (
 		<div className={style.hero}>

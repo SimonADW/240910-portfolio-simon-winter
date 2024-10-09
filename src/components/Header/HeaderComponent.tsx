@@ -10,7 +10,7 @@ const HeaderComponent = () => {
 		<section className={style.headerAndMenuSection}>
 			<header className={style.header}>
 				{isSmallDevice && <MenuButtonComponent isMenuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
-				<NavComponent isSmallDevice={isSmallDevice} isMenuOpen={menuOpen} />
+				<NavComponent isSmallDevice={isSmallDevice} isMenuOpen={menuOpen} setIsMenuOpen={setMenuOpen} />
 			</header>
 		</section>
 	);

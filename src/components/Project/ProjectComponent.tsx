@@ -27,7 +27,7 @@ const ProjectComponent = ({ project, index, images }: ProjectComponentType) => {
 				<div className={ inView ? `${style.project__textContent} ${style.fadeIn}`: style.project__textContent}>
 					<h3>{project.title}</h3>
 					<div>{project.technologies}</div>
-					<button><a href={project.gitUrl} title='Link to code on github' target='_blank'>Code on GitHub</a></button>
+					<a href={project.gitUrl} title='Link to code on github' target='_blank'><button>Code on GitHub</button></a>
 				</div>
 			</div>
 	}
