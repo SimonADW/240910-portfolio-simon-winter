@@ -1,5 +1,5 @@
 .hero {
-	height: clamp(500px, calc(75vh + var(--spacing-lg)), 900px);
+	height: clamp(500px, calc(70vh + var(--spacing-lg)), 900px);
 
 	display: flex;
 	align-items: flex-end;
