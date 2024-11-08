@@ -4,12 +4,11 @@ import style from "./HeroComponent.module.css";
 const HeroComponent = () => {
 	const [scrollY, setScrollY] = useState(0);
 
-	const handleScroll = () => {		
+	const handleScroll = () => {
 		setScrollY(window.scrollY);
 	};
 
-	useEffect(() => {		
-		// handleScroll();
+	useEffect(() => {
 		window.addEventListener("scroll", handleScroll);
 
 		return () => {
@@ -17,7 +16,7 @@ const HeroComponent = () => {
 		};
 	}, []);
 
-	// CALC TRANSLATION BASE ON SCOLLY
+	// CALC TRANSLATION BASE ON SCROLL-Y
 	const translateY = Math.min(scrollY * 0.3, 200); // Max translateY 200px
 
 	return (
@@ -25,18 +24,24 @@ const HeroComponent = () => {
 			<div className={`${style.circleMain} ${style.circle}`}>
 				<div
 					className={style.nameTitleContainer}
-					style={{ transform: `translateY(-${translateY}px)`}}
+					style={{ transform: `translateY(-${translateY}px)` }}
 				>
 					<div className={style.name}>Simon_Winter</div>
 					<div className={style.title}>Frontend_Developer</div>
 				</div>
 				<div
 					className={`${style.circleSecondary} ${style.circle}`}
-					style={{ transform: `translateY(-${translateY}px)  translateX(-${translateY}px)` }}
+					style={{
+						transform: `translateY(-${translateY}px)  translateX(-${translateY}px)`,
+					}}
 				></div>
 			</div>
 			<div className={style.socialLinks}>
-				<a href="https://github.com/SimonADW" target="_blank">
+				<a
+					href="https://github.com/SimonADW"
+					target="_blank"
+					title="Git Hub Profile"
+				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="23"
@@ -57,6 +62,7 @@ const HeroComponent = () => {
 				<a
 					href="https://www.linkedin.com/in/simon-a-d-winter/"
 					target="_blank"
+					title="LinkedIn Profile"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"

@@ -1,6 +1,14 @@
 export const projectsList = [
 	{
-		id: 1,
+		id: 4,
+		title: 'Mitt Frøhvelv',
+		technologies: 'React, TypeScript, Firebase',
+		image: 'mittFrohvelv',
+		gitUrl: 'https://github.com/SimonADW/240917-mitt-frohvelv',
+		liveUrl: 'n/a',
+	},	
+	{
+		id: 3,
 		title: 'Product-list with cart',
 		technologies: 'React, TypeScript',
 		image: 'dessertStore',
@@ -16,7 +24,7 @@ export const projectsList = [
 		liveUrl: 'https://fm-challenge-mortgage-calc.netlify.app/',
 	},
 	{
-		id: 3,
+		id: 1,
 		title: 'Start Wars API-fetch',
 		technologies: 'HTML, CSS, JavaScript',
 		image: 'starWars',

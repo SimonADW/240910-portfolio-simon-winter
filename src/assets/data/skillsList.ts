@@ -11,17 +11,22 @@ export const skillsList = [
 	},
 	{
 		technology: "JavaScript",
-		percentage: 70,
-		levelName: "Intermediate",
+		percentage: 80,
+		levelName: "Advanced",
 	},
 	{
 		technology: "React",
-		percentage: 50,
-		levelName: "Beginner",
+		percentage: 60,
+		levelName: "Intermediate",
 	},
 	{
-		technology: "typeScript",
-		percentage: 50,
+		technology: "TypeScript",
+		percentage: 60,
+		levelName: "Intermediate",
+	},
+	{
+		technology: "Node.js",
+		percentage: 40,
 		levelName: "Beginner",
 	}
 ];
