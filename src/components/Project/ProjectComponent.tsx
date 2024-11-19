@@ -19,7 +19,7 @@ const ProjectComponent = ({ project, index, images }: ProjectComponentType) => {
 			<div ref={ref} className={inView ? `${style.projectContainer} ${style.fadeIn}`: style.projectContainer }>
 				<div className={ inView ? `${style.project__imageContent} ${style.fadeIn}`: style.project__imageContent}>
 					<button>
-						<a href={project.liveUrl} target='_blank' title='Link to live view of project'>
+						<a href={project.liveUrl} target='_blank' title={project.liveUrl ? 'Link to live view of project': 'No live view available - In private use'}>
 							<img src={images[index]} alt={project.title} />
 						</a>
 					</button>
@@ -28,6 +28,10 @@ const ProjectComponent = ({ project, index, images }: ProjectComponentType) => {
 					<h3>{project.title}</h3>
 					<div>{project.technologies}</div>
 					<a href={project.gitUrl} title='Link to code on github' target='_blank'><button>Code on GitHub</button></a>
+					<div>
+						<p className={style.projectDescriptionLabel}>Description:</p>
+						<p>{project.description}</p>
+					</div>
 				</div>
 			</div>
 	}

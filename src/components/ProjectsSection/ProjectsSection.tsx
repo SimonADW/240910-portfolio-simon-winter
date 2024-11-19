@@ -2,6 +2,7 @@ import { projectsList } from "../../assets/data/projectsList";
 import ProjectComponent from "../Project/ProjectComponent";
 import style from "./ProjectsSection.module.css";
 // Project screenshot imports
+import passwordGen from '../../assets/images/page-shots/passwordGen.png'
 import  dessertStore from '../../assets/images/page-shots/dessertStore.png'
 import  mortgageCalc from '../../assets/images/page-shots/mortageCalc.png'
 import  starWars from '../../assets/images/page-shots/starWars.png'
@@ -15,6 +16,7 @@ export type ProjectType = {
 	image: string;
 	gitUrl: string;
 	liveUrl: string;
+	description: string;
 };
 
 
@@ -24,7 +26,7 @@ export type ProjectType = {
 const ProjectsSection = () => {	
 
 	// Array of project images - in corresponding order to projectsList
-	const images = [mittFrohvelv, dessertStore, mortgageCalc, starWars]
+	const images = [passwordGen, mittFrohvelv, dessertStore, mortgageCalc, starWars]
 
 	return (
 		<section id='projects' className={style.projectsSection}>
