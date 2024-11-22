@@ -4,5 +4,6 @@
 
 .header {	
 	padding: var(--spacing-md) 0;
+	letter-spacing: 1.4px;
 }
 

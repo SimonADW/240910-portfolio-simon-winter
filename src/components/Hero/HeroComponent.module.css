@@ -38,7 +38,7 @@
 	top: 0;
 	left: 50%;
 	transform: translate(-50%);	
-	animation: circleFlash 3s 1s backwards;
+	animation: circleFlash 3s ease-out 1s backwards;
 }
 
 .circleSecondary {
@@ -56,14 +56,29 @@
 }
 
 @keyframes circleFlash {
-
 	0% {
 		border-color: #d3853d;
 		box-shadow: 0 0 15px 3px #d3853d;
 	}
-	35% {
+	20% {
+		border-color: #d3853d;
+		box-shadow: 0 0 20px 3px #ffffff;
+	}
+	30% {
 		border-color: #ffffff;
-		box-shadow: 0 0 15px 3px #ffffff;
+		box-shadow: 0 0 30px 10px #ffffff;
+	}
+	40% {
+		border-color: #ffffff;
+		box-shadow: 0 0 20px 10px #ffffff;
+	}
+	60% {
+		border-color: #aec3cd;
+		box-shadow: 0 0 15px 7px #aec3cd;
+	}
+	80% {
+		border-color: #696dbb;
+		box-shadow: 0 0 15px 5px #3a3e90;
 	}
 	100% {
 		border-color: #4f02f6;

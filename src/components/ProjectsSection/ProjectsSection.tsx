@@ -2,6 +2,7 @@ import { projectsList } from "../../assets/data/projectsList";
 import ProjectComponent from "../Project/ProjectComponent";
 import style from "./ProjectsSection.module.css";
 // Project screenshot imports
+import wdsCalendarClone from '../../assets/images/page-shots/wds-calendar-clone.png'
 import passwordGen from '../../assets/images/page-shots/passwordGen.png'
 import  dessertStore from '../../assets/images/page-shots/dessertStore.png'
 import  mortgageCalc from '../../assets/images/page-shots/mortageCalc.png'
@@ -26,7 +27,7 @@ export type ProjectType = {
 const ProjectsSection = () => {	
 
 	// Array of project images - in corresponding order to projectsList
-	const images = [passwordGen, mittFrohvelv, dessertStore, mortgageCalc, starWars]
+	const images = [wdsCalendarClone, passwordGen, mittFrohvelv, dessertStore, mortgageCalc, starWars]
 
 	return (
 		<section id='projects' className={style.projectsSection}>

@@ -2,7 +2,6 @@ import style from './ProjectComponent.module.css'
 import type { ProjectType } from '../ProjectsSection/ProjectsSection'
 import { InView } from "react-intersection-observer";
 
-
 type ProjectComponentType = {
 	project: ProjectType,
 	index: number,

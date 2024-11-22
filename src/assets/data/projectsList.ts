@@ -1,5 +1,14 @@
 export const projectsList = [
 	{
+		id: 6,
+		title: 'Google Calendar Clone',
+		technologies: 'React, TypeScript',
+		image: 'wds-calendar-clone',
+		gitUrl: 'https://github.com/SimonADW/241013-WDS-google-calendar-clone',
+		liveUrl: 'https://wds-calendar-clone.netlify.app/',
+		description: 'Project/challenge following WDS`s Typescript course. Storing events in localStorage, rendering events based on available space and adding "+ 1 more" button when overflow'
+	},	
+	{
 		id: 5,
 		title: 'Password Generator',
 		technologies: 'React, TypeScript, npm',

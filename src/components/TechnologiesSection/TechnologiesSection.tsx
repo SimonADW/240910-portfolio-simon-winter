@@ -5,7 +5,7 @@ import Technology from '../Technology/Technology'
 const TechnologiesSection = () => {
   return (
 	<section id='technologies' className={style.technologiesSection}>
-		<h1>Technologies</h1>
+		<h2>Technologies</h2>
 		{skillsList.map((techItem, index) => {
 			return <Technology key={index} techItem={techItem} />
 		})}
