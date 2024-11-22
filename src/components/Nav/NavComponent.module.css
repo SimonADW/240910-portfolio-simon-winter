@@ -26,11 +26,26 @@
 
 .navBarLayout {
 	height: var(--spacing-xl);
-
 	margin-bottom: var(--spacing-xl);
 }
 
 .closeButton {
 	height: 3rem;
 	width: 3rem;
+}
+
+.nav a {
+	height: var(--spacing-lg);
+}
+
+.linkUnderline {	
+	border-bottom: 3px solid #4f02f6;
+	width: 0%;
+	transition: 300ms ease;
+}
+
+.nav a:hover .linkUnderline {
+	border-bottom: 3px solid #ffffff;
+	border-bottom-color: rgba(222, 150, 90, 0.4);
+	width: 100%;	
 }
