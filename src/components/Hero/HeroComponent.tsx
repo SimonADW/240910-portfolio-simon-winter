@@ -20,31 +20,20 @@ const HeroComponent = () => {
         }
     };
 
-	const requestDeviceOrientationPermission = async () => {
-		if (
-			typeof DeviceOrientationEvent !== "undefined" &&
-			typeof DeviceOrientationEvent.requestPermission === "function"
-		) {
-			const permissionState = await DeviceOrientationEvent.requestPermission();
-			if (permissionState === "granted") {
-				window.addEventListener("deviceorientation", handleTilt);
-			} else {
-				console.warn("Device orientation permission denied.");
-			}
-		} else {
-			// Non-iOS devices or older versions of iOS
-			window.addEventListener("deviceorientation", handleTilt);
-		}
-	};
-
 	useEffect(() => {
 		window.addEventListener("scroll", handleScroll);
-	
-		// Delay for initial animations and request permission
+
+		// CHECK IF DEVICE SUPPORTS DEVICEORIENTATIONEVENT,AND ADD LISTENER AFTER INITIAL ANIMATION IS DONE
 		setTimeout(() => {
-			requestDeviceOrientationPermission();
-		}, 1000);
+		if (window.DeviceOrientationEvent) {
+            window.addEventListener("deviceorientation", handleTilt);
+        } else {
+            console.warn("DeviceOrientationEvent is not supported on this device.");
+        }
+		}, 2000);
+		
 	
+		
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 			window.removeEventListener("deviceorientation", handleTilt);
