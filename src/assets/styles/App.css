@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #201f1f, #17121b, #201f1f); ;
+  background: linear-gradient(to bottom, var(--primary-color), #17121b, var(--primary-color)); ;
   color: var(--secondary-color);
 }
 
