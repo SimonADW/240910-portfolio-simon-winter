@@ -17,12 +17,19 @@
 
 .name {
 	font-weight: 200;
-	animation: slideLeft 1.5s ease-in-out 1.5s backwards;
+	animation: slideLeft 1.5s ease-in-out 1s backwards;
 }
 
 .title {
 	font-weight: 600;
-	animation: slideLeft 1.5s ease-in-out 2s backwards;
+	animation: slideLeft 1.5s ease-in-out 1.5s backwards;
+}
+
+.semiColon {
+	position: inherit;
+	font-weight: 600;
+	font-size: 40rem;
+	opacity: 0.1;
 }
 
 .circle {
@@ -50,6 +57,10 @@
 	right: -15%;
 	background-image: url("../../assets/images/profile-cartoon.jpeg");
 	background-size: cover;
+}
+
+.circleSecondary:hover {
+	background-image: url("../../assets/images/profile-cartoon-fixed.jpg");
 }
 
 .socialLinks {

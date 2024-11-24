@@ -1,17 +1,17 @@
 export const skillsList = [
 	{
 		technology: "HTML",
-		percentage: 80,
+		percentage: 75,
 		levelName: "Advanced",
 	},
 	{
 		technology: "CSS",
-		percentage: 80,
+		percentage: 75,
 		levelName: "Advanced",
 	},
 	{
 		technology: "JavaScript",
-		percentage: 80,
+		percentage: 75,
 		levelName: "Advanced",
 	},
 	{
