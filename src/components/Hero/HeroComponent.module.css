@@ -17,10 +17,12 @@
 
 .name {
 	font-weight: 200;
+	animation: slideLeft 1.5s ease-in-out 1.5s backwards;
 }
 
 .title {
 	font-weight: 600;
+	animation: slideLeft 1.5s ease-in-out 2s backwards;
 }
 
 .circle {
@@ -38,7 +40,7 @@
 	top: 0;
 	left: 50%;
 	transform: translate(-50%);	
-	animation: circleFlash 3s ease-out 1s backwards;
+	animation: circleFlash 3s ease-in 1s backwards;
 }
 
 .circleSecondary {
@@ -60,26 +62,42 @@
 		border-color: #d3853d;
 		box-shadow: 0 0 15px 3px #d3853d;
 	}
-	20% {
+	10% {
 		border-color: #d3853d;
-		box-shadow: 0 0 20px 3px #ffffff;
+		box-shadow: -10px -10px 15px 8px #d3853d;
+	}
+	20% {
+		border-color: #ffffff;
+		box-shadow: -20px -20px 15px 8px #ffffff;
 	}
 	30% {
 		border-color: #ffffff;
-		box-shadow: 0 0 30px 10px #ffffff;
+		box-shadow: -7px -7px 15px 10px #ffffff;
+	}
+	35% {
+		border-color: #ffffff;
+		box-shadow: 0 0 15px 10px #ffffff;
 	}
 	40% {
 		border-color: #ffffff;
-		box-shadow: 0 0 20px 10px #ffffff;
+		box-shadow: 7px 7px 15px 10px #ffffff;
+	}
+	50% {
+		border-color: #ffffff;
+		box-shadow: 15px 15px 15px 3px #ffffff;
 	}
 	60% {
-		border-color: #aec3cd;
-		box-shadow: 0 0 15px 7px #aec3cd;
+		border-color: #ffffff;
+		box-shadow: 10px 10px 15px 3px #ffffff;
+	}
+	70% {
+		border-color: #ffffff;
+		box-shadow: 0 0 15px 3px #ffffff;
 	}
 	80% {
-		border-color: #696dbb;
-		box-shadow: 0 0 15px 5px #3a3e90;
-	}
+		border-color: #d3853d;
+		box-shadow: 0 0 10px 3px #d3853d;
+	}	
 	100% {
 		border-color: #4f02f6;
 		box-shadow: 0 0 15px 3px #4f02f6;		
@@ -97,3 +115,14 @@
 		font-size: 2.5rem;
 	}
   }
+
+  @keyframes slideLeft {
+	0% {
+		transform: translateX(5%);
+		opacity: 0;
+	}	
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
