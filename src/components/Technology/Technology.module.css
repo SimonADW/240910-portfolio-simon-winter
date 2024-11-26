@@ -1,5 +1,5 @@
 .technologies__techItem {
-	
+	user-select: none;
 }
 
 .technologies__techItem__textcontainer {
@@ -22,7 +22,10 @@
 }
 
 .technologies__techItem:hover .technologies__techItem__levelBar {
-	transform: scaleX(1.02);	
+	/* transform: scaleX(1.02); */
+	animation: wobble 600ms ease-in;
+	
+
 }
 
 .technologies__techItem:hover .technologies__techItem__textcontainer h3 {
@@ -32,3 +35,26 @@
 .technologies__techItem:hover .technologies__techItem__textcontainer p {
 	color: var(--border-small-color);
 }
+
+/* Animation to make the levelBar length-wobble on hover */
+@keyframes wobble {
+	0% {
+		transform: scaleX(1);
+	}
+	20% {
+		transform: scaleX(1.02);
+	}
+	40% {
+		transform: scaleX(0.98);
+	}
+	60% {
+		transform: scaleX(1.01);
+	}
+	80% {
+		transform: scaleX(0.99);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
+

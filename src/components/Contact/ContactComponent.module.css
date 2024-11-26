@@ -28,7 +28,20 @@
 .contactSection a {
 	display: flex;
 	gap: var(--spacing-sm);
-	margin-bottom: var(--spacing-sm);
+	margin-bottom: var(--spacing-sm);	
+	transition: letter-spacing 0.3s ease-out;
+}
+
+.contactSection a:hover {
+	/* font-weight: 400;	 */
+	letter-spacing: 1.2px;
+}
+
+.contactSection a:hover .phoneIcon {
+	animation: wobbleIcon 600ms ease-in-out infinite;
+}
+.contactSection a:hover .mailIcon {
+	animation: sendMailLeft 800ms ease-in-out 2;
 }
 
 .contactSection svg {
@@ -39,6 +52,7 @@
 
 .contactSection path {
 	stroke: white;
+	fill: black;
 }
 
 /* ----- Circle ------- */
@@ -61,4 +75,38 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+@keyframes wobbleIcon {
+	0% {
+		transform: rotate(0deg);
+	}
+	20% {
+		transform: rotate(5deg);
+	}
+	40% {
+		transform: rotate(-10deg);
+	}
+	60% {
+		transform: rotate(5deg);
+	}
+	80% {
+		transform: rotate(-10deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}	
+
+@keyframes sendMailLeft {	
+	0% {
+		transform: translateY(0) scale(1);
+
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-80%) scale(0.5);		
+		opacity: 0;
+	}
+	
 }
