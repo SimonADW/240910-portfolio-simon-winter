@@ -107,7 +107,7 @@
 	}
 	50% {
 		border-color: #ffffff;
-		box-shadow: calc(15px * var(--offset-multiplier)) calc(15px * var(--offset-multiplier)) 15px 3px #ffffff;
+		box-shadow: calc(20px * var(--offset-multiplier)) calc(20px * var(--offset-multiplier)) 15px 3px #ffffff;
 	}
 	60% {
 		border-color: #ffffff;
