@@ -12,7 +12,7 @@ const HeroComponent = () => {
 	const handleTilt = (event: DeviceOrientationEvent) => {
         const tiltSideways = Math.min(Math.max(event.gamma || 0, -15), 15); // Clamps to [-15, 15]
         const tiltFwdBckwards = Math.min(Math.max(event.beta || 0, -15), 15); // Clamps to [-15, 15]		
-        const shadowInset = `${tiltSideways}px ${tiltFwdBckwards}px 15px 3px #4f02f6`;
+        // const shadowInset = `${tiltSideways}px ${tiltFwdBckwards}px 15px 3px #4f02f6`;
         const circleMainElement: HTMLDivElement = document.querySelector(`.${style.circleMain}`)!;
 
         if (circleMainElement) {
@@ -31,9 +31,7 @@ const HeroComponent = () => {
             console.warn("DeviceOrientationEvent is not supported on this device.");
         }
 		}, 2000);
-		
-	
-		
+			
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 			window.removeEventListener("deviceorientation", handleTilt);
@@ -58,6 +56,7 @@ const HeroComponent = () => {
 					style={{
 						transform: `translateY(-${translateY}px)  translateX(-${translateY}px)`,
 					}}
+					title="Once upon a time..."
 				></div>
 			</div>
 			<div className={style.socialLinks}>

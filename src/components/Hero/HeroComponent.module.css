@@ -5,7 +5,7 @@
 	align-items: flex-end;
 	justify-content: center;
 	
-	position: relative;	
+	position: relative;		
 }
 
 .nameTitleContainer {
@@ -42,21 +42,22 @@
 
 .circleMain {
 	width: 70%;
-	border-color: #4f02f6;
-	box-shadow: 0 0 15px 3px #4f02f6;
+	border-color: var(--border-large-color);
+	box-shadow: 0 0 15px 3px var(--border-large-color);
 	top: 0;
 	left: 50%;
 	transform: translate(-50%);	
-	animation: circleFlash 3s ease-in 1s backwards;
+	animation: circleFlash 3s ease-in 1s backwards;	
 }
 
 .circleSecondary {
 	width: 40%;
-	border-color: #d3853d;
+	border-color: var(--border-small-color);
 	top: 0;
 	right: -15%;
 	background-image: url("../../assets/images/profile-cartoon.jpeg");
 	background-size: cover;
+	transition: background-image 0.8s;
 }
 
 .circleSecondary:hover {
@@ -66,6 +67,7 @@
 .socialLinks {
 	display: flex;
 	gap: var(--spacing-sm);
+	z-index: 2;
 }
 
 /* ADJUST ANIMATION OFFSET ACCORDING TO SCREEN SIZE */
@@ -122,12 +124,16 @@
 		box-shadow: 0 0 10px 3px #d3853d;
 	}	
 	100% {
-		border-color: #4f02f6;
-		box-shadow: 0 0 15px 3px #4f02f6;		
+		border-color: var(--border-large-color);
+		box-shadow: 0 0 15px 3px var(--border-large-color);
 	}	
 }
 
 @media screen and (min-width: 768px) {
+	.hero {
+		height: 82vh;
+	}
+	
 	.nameTitleContainer {
 		font-size: 2rem;
 	}
