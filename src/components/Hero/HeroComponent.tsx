@@ -8,33 +8,10 @@ const HeroComponent = () => {
 		setScrollY(window.scrollY);
 	};
 
-	// FUNCTION TO DETECT TILT ON MOBILE DEVICES, AND SET BOX-SHADOW INSET ON CIRCLEMAIN ACCORDING TO TILT
-	const handleTilt = (event: DeviceOrientationEvent) => {
-        const tiltSideways = Math.min(Math.max(event.gamma || 0, -15), 15); // Clamps to [-15, 15]
-        const tiltFwdBckwards = Math.min(Math.max(event.beta || 0, -15), 15); // Clamps to [-15, 15]		
-        // const shadowInset = `${tiltSideways}px ${tiltFwdBckwards}px 15px 3px #4f02f6`;
-        const circleMainElement: HTMLDivElement = document.querySelector(`.${style.circleMain}`)!;
-
-        if (circleMainElement) {
-            circleMainElement.style.boxShadow = shadowInset;
-        }
-    };
-
 	useEffect(() => {
 		window.addEventListener("scroll", handleScroll);
-
-		// CHECK IF DEVICE SUPPORTS DEVICEORIENTATIONEVENT,AND ADD LISTENER AFTER INITIAL ANIMATION IS DONE
-		setTimeout(() => {
-		if (window.DeviceOrientationEvent) {
-            window.addEventListener("deviceorientation", handleTilt);
-        } else {
-            console.warn("DeviceOrientationEvent is not supported on this device.");
-        }
-		}, 2000);
-			
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
-			window.removeEventListener("deviceorientation", handleTilt);
 		};
 	}, []);
 
