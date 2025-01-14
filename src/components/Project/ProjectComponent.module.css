@@ -43,6 +43,8 @@
 	color: var(--primary-color);
 	border-radius: 0.25rem;
 	background: var(--button-gradient-color);
+	background-size: 200%;
+	animation: moving-gradient 5s infinite reverse;
 }
 
 .project__textContent button:hover {
@@ -90,3 +92,25 @@
 		flex-direction: row-reverse;
 	}
 }
+
+@keyframes moving-gradient {
+	0% {
+	  background-position: 0%;
+	}
+
+	12% {
+		background-position: 25%;
+	}
+
+	25% {
+	  background-position: 50%;
+	}
+
+	37% {
+		background-position: 75%;
+	}
+
+	50% {
+	  background-position: 100%;
+	}
+  }
