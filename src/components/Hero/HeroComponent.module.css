@@ -55,6 +55,9 @@
 	border-color: var(--border-small-color);
 	top: 0;
 	right: -15%;
+	/* Preload hover-image */
+	background-image: url("../../assets/images/profile-cartoon-fixed.jpg"); 
+	/* Default image */
 	background-image: url("../../assets/images/profile-cartoon.jpeg");
 	background-size: cover;
 	transition: background-image 0.8s;

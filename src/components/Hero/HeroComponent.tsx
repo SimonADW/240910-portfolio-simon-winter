@@ -3,9 +3,15 @@ import style from "./HeroComponent.module.css";
 
 const HeroComponent = () => {
 	const [scrollY, setScrollY] = useState(0);
+	
+	const handleScroll = () => {		
+		const currentScroll = window.scrollY;
+		// If out of view, return
+		if(currentScroll > 500) {
+			return;	
+		}; 				
 
-	const handleScroll = () => {
-		setScrollY(window.scrollY);
+		setScrollY(currentScroll);
 	};
 
 	useEffect(() => {
