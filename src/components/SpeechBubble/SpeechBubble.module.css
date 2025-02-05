@@ -1,0 +1,33 @@
+.speechBubbleWrapper {
+	width: 200px;
+	position: fixed;
+	right: 140px;
+	bottom: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.speechBubbleText {
+	padding: 10px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	
+	position: absolute;
+	font-size: 1.2rem;
+	color: var(--primary-secondary);
+}
+
+
+@media screen and (max-width: 767px) {
+	.speechBubbleWrapper {
+		width: 150px;
+		right: 100px;
+		bottom: 150px;
+	}
+	.speechBubbleText {
+		font-size: 0.8rem;	
+	}
+}

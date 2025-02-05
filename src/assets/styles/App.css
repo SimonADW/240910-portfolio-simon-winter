@@ -30,7 +30,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: calc(var(--spacing-lg) * 6);
-  margin-bottom: calc(var(--spacing-lg) * 6);;
+  margin-bottom: calc(var(--spacing-lg) * 6);
   flex: 1;
 }
 
@@ -38,5 +38,6 @@ main {
   main {
     max-width: 1060px;
     margin: 0 auto;
+    margin-bottom: calc(var(--spacing-lg) * 6);
   }  
 }

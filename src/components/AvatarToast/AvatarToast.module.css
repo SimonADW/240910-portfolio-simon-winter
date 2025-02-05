@@ -1,13 +1,13 @@
 .wrapper {
 	position: relative;
 	pointer-events: none;
-	height: 180px;
-	overflow: hidden;
+	/* height: 180px; */
+	/* overflow: hidden; */
 }
 
 .character {
-	position: absolute;
-	bottom: var(--spacing-lg);
+	position: fixed;
+	bottom: var(--spacing-xl);
 	right: 0;
 	width: 150px;
 	transform: translateX(175px); /* Moves it out of the viewport */
@@ -16,6 +16,6 @@
 
 @media screen and (max-width: 767px) {
 	.character {
-		width: 100px;
+		width: 120px;
 	}	
 }
