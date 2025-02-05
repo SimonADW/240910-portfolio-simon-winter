@@ -1,0 +1,21 @@
+.wrapper {
+	position: relative;
+	pointer-events: none;
+	height: 180px;
+	overflow: hidden;
+}
+
+.character {
+	position: absolute;
+	bottom: var(--spacing-lg);
+	right: 0;
+	width: 150px;
+	transform: translateX(175px); /* Moves it out of the viewport */
+	transition: transform 400ms ease-out;
+}
+
+@media screen and (max-width: 767px) {
+	.character {
+		width: 100px;
+	}	
+}

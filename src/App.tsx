@@ -8,6 +8,7 @@ import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 import TechnologiesSection from './components/TechnologiesSection/TechnologiesSection'
 import FooterComponent from './components/Footer/FooterComponen'
 import ContactComponent from './components/Contact/ContactComponent'
+import AvatarToast from './components/AvatarToast/AvatarToast'
 
 function App() {  
 
@@ -20,6 +21,7 @@ function App() {
       <TechnologiesSection />
       <ContactComponent />
       </main>
+      <AvatarToast />
       <FooterComponent />
     </>
   )
