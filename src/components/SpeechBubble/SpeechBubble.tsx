@@ -10,7 +10,7 @@ interface SpeechBubbleProps extends React.HTMLAttributes<HTMLDivElement> {
 
 const SpeechBubble = ({
 	children,
-	fillColor = "transparent",
+	fillColor = "none",
 	strokeColor = "white",
 	speaksFrom = "left",
 	...delegated
