@@ -21,8 +21,8 @@ const SpeechBubble = ({
 		<>
 			<div className={style.speechBubbleWrapper} {...delegated}>
 				<svg
-					width="200"
-					height="150"
+					width="200"  // Dimensions specified, else mobile browsers won´t display svg
+					height="150" // Dimensions specified, else mobile browsers won´t display svg
 					viewBox="0 0 200 150"
 					xmlns="http://www.w3.org/2000/svg"
 					fill={fillColor}
