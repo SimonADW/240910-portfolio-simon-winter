@@ -19,6 +19,8 @@ const AvatarToast = () => {
 		return () => clearTimeout(timer);
 	}, [isVisible]);
 
+	
+
 	return (
 		<>
 			<InView
@@ -42,10 +44,11 @@ const AvatarToast = () => {
 
 						<SpeechBubble
 							speaksFrom="right"
+							// fontColor="pink"
 							style={{
 								opacity: isVisible ? 1 : 0,
 								transition: "opacity 400ms ease-out",
-                transform: "rotate(-10deg)"
+               					 transform: "rotate(-10deg)"
 							}}
 						>
 							Thanks for stopping by! <br /> 💙🧡

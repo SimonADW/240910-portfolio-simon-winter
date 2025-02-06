@@ -5,13 +5,15 @@ interface SpeechBubbleProps extends React.HTMLAttributes<HTMLDivElement> {
 	children: React.ReactNode;
 	fillColor?: string;
 	strokeColor?: string;
+	fontColor?: string;
 	speaksFrom?: "left" | "right";
 }
 
 const SpeechBubble = ({
 	children,
-	fillColor = "transparent",
+	fillColor = "white",
 	strokeColor = "white",
+	fontColor = "black",
 	speaksFrom = "left",
 	...delegated
 }: SpeechBubbleProps) => {
@@ -40,7 +42,11 @@ const SpeechBubble = ({
 					/>
 				</svg>
 
-				<div className={style.speechBubbleText}>{children}</div>
+				<div 
+				className={style.speechBubbleText}
+				style={{color: fontColor}}
+				
+				>{children}</div>
 			</div>
 		</>
 	);
