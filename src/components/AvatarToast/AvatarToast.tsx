@@ -6,6 +6,7 @@ import SpeechBubble from "../SpeechBubble/SpeechBubble";
 
 const AvatarToast = () => {
 	const [isVisible, setIsVisible] = useState(false);
+	const [isSpeechVisible, setIsSpeechVisible] = useState(false)
 
 	// Retreat avatar after delay
 	useEffect(() => {
@@ -19,7 +20,28 @@ const AvatarToast = () => {
 		return () => clearTimeout(timer);
 	}, [isVisible]);
 
-	
+	// Enter and retreat speechbubble after delay
+	useEffect(()=> {		
+		let timer1: number | undefined;	
+		let timer2: number | undefined;	
+
+		if (isVisible) {
+			timer1 = setTimeout(()=> {
+				setIsSpeechVisible(true)
+			}, 500)
+			
+			timer2 = setTimeout(()=> {
+				setIsSpeechVisible(false)
+			}, 3500)
+		}
+
+		return ()=> {
+			clearTimeout(timer1);
+			clearTimeout(timer2);
+		} 
+	}, [isVisible])
+
+
 
 	return (
 		<>
@@ -46,9 +68,9 @@ const AvatarToast = () => {
 							speaksFrom="right"
 							// fontColor="pink"
 							style={{
-								opacity: isVisible ? 1 : 0,
+								opacity: isSpeechVisible ? 1 : 0,
 								transition: "opacity 400ms ease-out",
-               					 transform: "rotate(-10deg)"
+               					transform: "rotate(-10deg)"
 							}}
 						>
 							Thanks for stopping by! <br /> 💙🧡
