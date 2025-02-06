@@ -7,13 +7,24 @@ type menuButtonProps = {
 }	
 
 const MenuButtonComponent = ({isMenuOpen, setMenuOpen}: menuButtonProps) => {
+	
+	
+	const handleToggleMenu = ()=> {
+		document.startViewTransition(()=> {
+			setMenuOpen((prev)=> !prev )
+		})
+	}
+	
   return (
 	<>
 		<button
+			aria-haspopup
+			aria-expanded={isMenuOpen}
+			aria-controls='menu'
 			className={style.menuButton}
 			title={isMenuOpen ? "Close Menu" : "Open Menu" }
 			aria-label={isMenuOpen ? "Close Menu" : "Open Menu" }
-			onClick={()=>setMenuOpen(!isMenuOpen)}
+			onClick={handleToggleMenu}
 			>
 				{isMenuOpen ? 
 				<svg width="800px" height="800px" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

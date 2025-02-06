@@ -12,7 +12,7 @@ const NavComponent = ({isSmallDevice, isMenuOpen, setIsMenuOpen}: navBarProps) =
 	
 	return (
 		<>			
-		<nav className={`${style.nav} ${isSmallDevice ? style.navMenuLayout : style.navBarLayout} ${isMenuOpen && style.open}`}>
+		<nav role="menu" className={`${style.nav} ${isSmallDevice ? style.navMenuLayout : style.navBarLayout} ${isMenuOpen && style.open}`}>
 				<a href="#projects" onClick={()=>setIsMenuOpen(false)}>
 					Projects
 					<div className={style.linkUnderline}></div>
