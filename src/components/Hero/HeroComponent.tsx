@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import style from "./HeroComponent.module.css";
+import profileImage from "../../assets/images/profile-cartoon.jpeg"
 
 const HeroComponent = () => {
 	const [scrollY, setScrollY] = useState(0);
@@ -34,13 +35,14 @@ const HeroComponent = () => {
 					<div className={style.name}>Simon_Winter</div>
 					<div className={style.title}>Frontend_Developer</div>
 				</div>
-				<div
+				<img
+					src={profileImage}
 					className={`${style.circleSecondary} ${style.circle}`}
 					style={{
 						transform: `translateY(-${translateY}px)  translateX(-${translateY}px)`,
 					}}
 					title="Once upon a time..."
-				></div>
+				></img>
 			</div>
 			<div className={style.socialLinks}>
 				<a
