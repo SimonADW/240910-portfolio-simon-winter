@@ -14,12 +14,12 @@ const NavComponent = ({isSmallDevice, isMenuOpen, setIsMenuOpen}: navBarProps) =
 	return (
 		<>	
 		<nav role="menu" className={`${style.nav} ${isSmallDevice ? style.navMenuLayout : style.navBarLayout} ${isMenuOpen && style.open}`}>
-				<a href="#projects" tabIndex={isMenuOpen ? 0 : -1} onClick={()=>setIsMenuOpen(false)}>
-					Projects
+				<a href="#about" tabIndex={isMenuOpen ? 0 : -1} onClick={()=>setIsMenuOpen(false)}>
+					About
 					<div className={style.linkUnderline}></div>
 				</a>
-				<a href="#technologies" tabIndex={isMenuOpen ? 0 : -1} onClick={()=>setIsMenuOpen(false)}>
-					Technologies
+				<a href="#projects" tabIndex={isMenuOpen ? 0 : -1} onClick={()=>setIsMenuOpen(false)}>
+					Projects
 					<div className={style.linkUnderline}></div>
 				</a>
 				<a href="#contact" tabIndex={isMenuOpen ? 0 : -1} onClick={()=>setIsMenuOpen(false)}>

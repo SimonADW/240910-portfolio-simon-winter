@@ -13,13 +13,13 @@ const Technology = ({ techItem }: TechnologyPropsType) => {
 		<div className={style.technologies__techItem}>
 			<div className={style.technologies__techItem__textcontainer}>
 				<h3>{techItem.technology}</h3>
-				<p>{techItem.levelName}</p>
+				{/* <p>{techItem.levelName}</p> */}
 			</div>
-			<div
+			{/* <div
 				className={style.technologies__techItem__levelBar}
 				title={`${techItem.technology} skill level bar`}
 				style={{ width: `${techItem.percentage}%` }}
-			></div>
+			></div> */}
 		</div>
 	);
 };

@@ -9,6 +9,7 @@ import TechnologiesSection from './components/TechnologiesSection/TechnologiesSe
 import FooterComponent from './components/Footer/FooterComponen'
 import ContactComponent from './components/Contact/ContactComponent'
 import AvatarToast from './components/AvatarToast/AvatarToast'
+import AboutSection from './components/AboutSection/AboutSection'
 
 function App() {  
 
@@ -17,8 +18,9 @@ function App() {
       <HeaderComponent />
       <main>
       <HeroComponent />
+      <AboutSection />
       <ProjectsSection />
-      <TechnologiesSection />
+      {/* <TechnologiesSection /> */}
       <ContactComponent />
       </main>
       <AvatarToast />

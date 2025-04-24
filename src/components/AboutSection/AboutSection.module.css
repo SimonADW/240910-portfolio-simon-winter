@@ -1,0 +1,33 @@
+
+.aboutSection {
+	min-height: 80vh;	/* Gives the section enough space to "stand alone" */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: var(--spacing-lg);
+	font-size: 1.5rem;
+	font-weight: 300;
+	text-align: center;
+	scroll-margin-top: 100px; /* Ensures the about link scrolls to just above the next section */
+}
+
+.aboutHeader {
+	margin-bottom: var(--spacing-xl);
+	font-size: 2.5rem;
+	font-weight: 300;
+}
+
+.aboutSection a {
+	background: var(--button-gradient-color);
+	background-clip: text;
+	color: transparent;
+	
+}
+
+.aboutSection a:hover {
+	transition: 200ms;
+	color: var(--secondary-color);
+	text-decoration: underline;
+	text-decoration-color: var(--border-large-color);
+}
+
