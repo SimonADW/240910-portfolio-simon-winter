@@ -16,13 +16,13 @@ export default async (request, context) => {
     <!-- Primary Meta Tags -->
     <title>Simon Winter - Frontend Developer</title>
     <meta name="title" content="Simon Winter - Frontend Developer" />
-    <meta name="description" content="Frontend Developer with expertise in React, TypeScript, and modern web technologies. Bringing sharp attention to detail and strong problem-solving skills from The Royal Palace to web development." />
+    <meta name="description" content="Frontend Developer with skills in React, TypeScript, and modern web technologies. Bringing sharp attention to detail and strong problem-solving skills from The Royal Palace to web development." />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://simonwinter.no/" />
     <meta property="og:title" content="Simon Winter - Frontend Developer" />
-    <meta property="og:description" content="Frontend Developer with expertise in React, TypeScript, and modern web technologies. Bringing sharp attention to detail and strong problem-solving skills from The Royal Palace to web development." />
+    <meta property="og:description" content="Frontend Developer with skills in React, TypeScript, and modern web technologies. Bringing sharp attention to detail and strong problem-solving skills from The Royal Palace to web development." />
     <meta property="og:image" content="https://simonwinter.no/profile-cartoon-wide.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
@@ -35,14 +35,14 @@ export default async (request, context) => {
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://simonwinter.no/" />
     <meta property="twitter:title" content="Simon Winter - Frontend Developer" />
-    <meta property="twitter:description" content="Frontend Developer with expertise in React, TypeScript, and modern web technologies. Bringing sharp attention to detail and strong problem-solving skills from The Royal Palace to web development." />
+    <meta property="twitter:description" content="Frontend Developer with skills in React, TypeScript, and modern web technologies. Bringing sharp attention to detail and strong problem-solving skills from The Royal Palace to web development." />
     <meta property="twitter:image" content="https://simonwinter.no/profile-cartoon-wide.jpg" />
     <meta property="twitter:image:alt" content="Simon Winter - Frontend Developer" />
   </head>
   <body>
     <div id="root">
       <h1>Simon Winter - Frontend Developer</h1>
-      <p>Frontend Developer with expertise in React, TypeScript, and modern web technologies. Bringing sharp attention to detail and strong problem-solving skills from The Royal Palace to web development.</p>
+      <p>Frontend Developer with skills in React, TypeScript, and modern web technologies. Bringing sharp attention to detail and strong problem-solving skills from The Royal Palace to web development.</p>
     </div>
   </body>
 </html>`;
