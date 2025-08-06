@@ -1,3 +1,9 @@
+// To add a project:
+// 1. Add project to the projectslist
+// 2. In ProjectsSection.tsx 
+// 	a: Import image
+//	b: Add imported image to images array
+
 export const projectsList = [
 	{
 		id: 7,
