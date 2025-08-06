@@ -1,7 +1,6 @@
 [edge_functions]
   directory = "netlify/edge-functions"
-  external_node_modules = []
 
 [[edge_functions]]
-  path = "/blog/*"
+  path = "/"
   function = "og-prerender"
