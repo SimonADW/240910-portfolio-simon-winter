@@ -1,0 +1,24 @@
+[[redirects]]
+  from = "/*"
+  to = "https://service.prerender.io/"
+  status = 200
+  force = true
+  conditions = { User-Agent = [
+    "Googlebot",
+    "Yahoo",
+    "bingbot",
+    "Yandex",
+    "facebookexternalhit",
+    "twitterbot",
+    "rogerbot",
+    "linkedinbot",
+    "embedly",
+    "baiduspider",
+    "pinterest",
+    "slackbot",
+    "vkShare",
+    "W3C_Validator",
+    "redditbot",
+    "Applebot",
+    "WhatsApp"
+  ]}
