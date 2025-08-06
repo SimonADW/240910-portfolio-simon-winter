@@ -8,6 +8,7 @@ import  dessertStore from '../../assets/images/page-shots/dessertStore.png'
 import  mortgageCalc from '../../assets/images/page-shots/mortageCalc.png'
 import  starWars from '../../assets/images/page-shots/starWars.png'
 import  mittFrohvelv from '../../assets/images/page-shots/mittFrohvelv.png'
+import  bunchOBlogs from '../../assets/images/page-shots/bunchOBlogs.png'
 
 
 export type ProjectType = {
@@ -27,7 +28,7 @@ export type ProjectType = {
 const ProjectsSection = () => {	
 
 	// Array of project images - in corresponding order to projectsList
-	const images = [wdsCalendarClone, passwordGen, mittFrohvelv, dessertStore, mortgageCalc, starWars]
+	const images = [bunchOBlogs, wdsCalendarClone, passwordGen, mittFrohvelv, dessertStore, mortgageCalc, starWars]
 
 	return (
 		<section id='projects' className={style.projectsSection}>

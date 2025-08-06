@@ -1,3 +1,19 @@
+/**
+ * Netlify Edge Function for Open Graph Meta Tags
+ * 
+ * This function intercepts requests to the root path and serves different content
+ * based on the user agent:
+ * 
+ * - For social media crawlers (Facebook, Twitter, LinkedIn, etc.): 
+ *   Returns pre-rendered HTML with Open Graph meta tags for proper social sharing
+ * 
+ * - For regular users (browsers): 
+ *   Passes through to the normal React SPA
+ * 
+ * This solves the issue where social media crawlers can't see Open Graph tags
+ * in React SPAs because they don't execute JavaScript.
+ */
+
 export default async (request, context) => {
   const userAgent = request.headers.get('user-agent') || '';
   

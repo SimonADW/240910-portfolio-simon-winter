@@ -1,5 +1,14 @@
 export const projectsList = [
 	{
+		id: 7,
+		title: 'Bunch o\' Blogs',
+		technologies: 'React, TypeScript, Node.js, Express, Auth0',
+		image: 'bunchOBlogs',
+		gitUrl: 'https://github.com/SimonADW/bunch-o-blogs',
+		liveUrl: '',
+		description: 'Project exploring backend development with Node.js and Express. Features Auth0 authentication, accessibility focus with react-focus-lock, and secure HTML handling with sanitization and parsing on the backend.'
+	},
+	{
 		id: 6,
 		title: 'Google Calendar Clone',
 		technologies: 'React, TypeScript',
