@@ -1,26 +1,7 @@
-[[redirects]]
-  from = "/*"
-  to = "https://service.prerender.io/"
-  status = 200
-  force = true
-  conditions = { User-Agent = [
-    "Googlebot",
-    "Yahoo",
-    "bingbot",
-    "Yandex",
-    "facebookexternalhit",
-    "twitterbot",
-    "rogerbot",
-    "linkedinbot",
-    "embedly",
-    "baiduspider",
-    "pinterest",
-    "slackbot",
-    "vkShare",
-    "W3C_Validator",
-    "redditbot",
-    "Applebot",
-    "WhatsApp"
-  ]}
-  [redirects.headers]
-    X-Prerender-Token = "idO7ayCXVtMvPs6u6Fh4"
+[edge_functions]
+  directory = "netlify/edge-functions"
+  external_node_modules = []
+
+[[edge_functions]]
+  path = "/blog/*"
+  function = "og-prerender"
