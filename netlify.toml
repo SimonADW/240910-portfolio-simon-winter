@@ -22,6 +22,5 @@
     "Applebot",
     "WhatsApp"
   ]}
-
-   [redirects.headers]
+  [redirects.headers]
     X-Prerender-Token = "idO7ayCXVtMvPs6u6Fh4"
