@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import style from "./HeroComponent.module.css";
-import profileImage from "../../assets/images/profile-cartoon.jpeg"
+import profileImage from "../../assets/images/profile-cartoon.webp";
 
 const HeroComponent = () => {
 	const [scrollY, setScrollY] = useState(0);
