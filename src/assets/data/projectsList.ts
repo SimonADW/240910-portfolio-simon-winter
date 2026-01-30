@@ -58,14 +58,5 @@ export const projectsList = [
 		gitUrl: 'https://github.com/SimonADW/240712-challenge-mortgage-calc',
 		liveUrl: 'https://fm-challenge-mortgage-calc.netlify.app/',
 		description: 'A React-based mortgage calculator built as a personal practice project. Users can input loan details to calculate monthly payments and total interest.'
-	},
-	{
-		id: 1,
-		title: 'Start Wars API-fetch',
-		technologies: 'HTML, CSS, JavaScript',
-		image: 'starWars',
-		gitUrl: 'https://github.com/SimonADW/ffu-assignment1-starwars',
-		liveUrl: 'https://starwarsassignment1.netlify.app/src/films',
-		description: 'A school assignment showcasing basic API-fetching skills using the Star Wars API. Users can explore information about Star Wars films and characters.'
-	},
+	}
 ];

@@ -1,5 +1,6 @@
 .hero {
 	height: clamp(500px, calc(70vh + var(--spacing-lg)), 900px);
+	padding-bottom: var(--spacing-sm);	
 
 	display: flex;
 	align-items: flex-end;
@@ -35,7 +36,8 @@
 }
 
 .circleMain {
-	width: 70%;
+	width: clamp(50%, 70%, 700px);
+	/* max-height: 90%; */
 	border-color: var(--border-large-color);
 	box-shadow: 0 0 15px 3px var(--border-large-color);
 	top: 0;

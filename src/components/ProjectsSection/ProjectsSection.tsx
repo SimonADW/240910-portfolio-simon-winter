@@ -28,7 +28,7 @@ export type ProjectType = {
 const ProjectsSection = () => {	
 
 	// Array of project images - in corresponding order to projectsList
-	const images = [bunchOBlogs, wdsCalendarClone, passwordGen, mittFrohvelv, dessertStore, mortgageCalc, starWars]
+	const images = [bunchOBlogs, wdsCalendarClone, passwordGen, mittFrohvelv, dessertStore, mortgageCalc]
 
 	return (
 		<section id='projects' className={style.projectsSection}>
