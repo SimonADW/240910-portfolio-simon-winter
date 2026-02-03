@@ -6,7 +6,6 @@ import wdsCalendarClone from '../../assets/images/page-shots/wds-calendar-clone.
 import passwordGen from '../../assets/images/page-shots/passwordGen.png'
 import  dessertStore from '../../assets/images/page-shots/dessertStore.png'
 import  mortgageCalc from '../../assets/images/page-shots/mortageCalc.png'
-import  starWars from '../../assets/images/page-shots/starWars.png'
 import  mittFrohvelv from '../../assets/images/page-shots/mittFrohvelv.png'
 import  bunchOBlogs from '../../assets/images/page-shots/bunchOBlogs.png'
 
